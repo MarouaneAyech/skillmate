@@ -1,64 +1,70 @@
-# Skillmate
+# Getting Started with Create React App
 
-It is a smart tool designed to transform the educational process into a skill-oriented approach, enhancing learning through semantic tagging, content-based course search, and an AI-powered course comprehension assistant.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Steps to install the project locally :
+## Available Scripts
 
-1. Clone the repo locally
+In the project directory, you can run:
 
-    `git clone https://github.com/MarouaneAyech/skillmate.git`
+### `npm start`
 
-2. Go to the project root
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-    `cd skillmate`
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-3. Install the dependencies (listed in package.json)
+### `npm test`
 
-    `npm install`
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-4. Start the dev server (connect to the recat app at http://localhost:3000)
+### `npm run build`
 
-    `npm start`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Steps to deploy the project in firebase hosting :
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Install Firebase CLI
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-    `npm install -g firebase-tools`
+### `npm run eject`
 
-2. Log into Firebase
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-    `firebase login`
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. Create a firebase project
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-    `firebase projects:create skillmate --display-name "skillmate"`
-`
-4. Init Firebase in the project
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-    `firebase init`
+## Learn More
 
-    Note : Answer to the questions as follows :
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-    - Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices : Hosting
-    
-    Project setup :
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-    - Please select an option: Use an existing project
-    - Select a default Firebase project for this directory: skillmate (skillmate)
+### Code Splitting
 
-    Hosting Setup
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-    - What do you want to use as your public directory: build
-    - Configure as a single-page app (rewrite all urls to /index.html): Yes
-    - Set up automatic builds and deploys with GitHub : No
+### Analyzing the Bundle Size
 
-5. Build the project (create an optimized production build of the project)
-    
-    `npm run build`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-6. Deploy to the firebase Hosting
+### Making a Progressive Web App
 
-    `firebase deploy`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-    -> Hosting URL: https://skillmate.web.app
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

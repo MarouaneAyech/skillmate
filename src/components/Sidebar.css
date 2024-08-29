@@ -1,0 +1,34 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .sidebar-item {
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, border 0.3s;
+  }
+  
+  .sidebar-item.hovered {
+    background-color: #555;
+    border: 2px solid #fff; /* Add borders on hover */
+  }
+  
+  .sidebar-tooltip {
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
