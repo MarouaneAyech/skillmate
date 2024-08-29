@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'; // Custom CSS for the app
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [activeSection, setActiveSection] = useState('');
+
+    const handleSelect = (section) => {
+        setActiveSection(section);
+    };
+
+    return (
+        <div className="app-container">
+            <Sidebar onSelect={handleSelect} />
+            <div className="content">
+                {activeSection === 'search' && <div className="section">Search Page</div>}
+                {activeSection === 'book' && <div className="section">Book Page</div>}
+                {activeSection === 'code' && <div className="section">Code Page</div>}
+                {activeSection === 'settings' && <div className="section">Settings Page</div>}
+            </div>
+        </div>
+    );
+};
 
 export default App;
