@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Custom CSS for the app
+import UploadPDF from './components/UploadPDF'; // Import the UploadPDF component
 
 const App = () => {
     const [activeSection, setActiveSection] = useState('');
@@ -18,6 +19,7 @@ const App = () => {
                 {activeSection === 'book' && <div className="section">Book Page</div>}
                 {activeSection === 'code' && <div className="section">Code Page</div>}
                 {activeSection === 'settings' && <div className="section">Settings Page</div>}
+                {activeSection === 'upload' && <UploadPDF />} {/* New Upload PDF section */}
             </div>
         </div>
     );
